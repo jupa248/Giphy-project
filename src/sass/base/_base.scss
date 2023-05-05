@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 70%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(desktop) {
+    // width < 900?
+    font-size: 85%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 100%; //1rem = 12, 12/16
+  }
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include bgColored;
+}
+
+.sections-container {
+  @include respond(desktop) {
+    display: grid;
+    grid-template-columns: 3fr 7fr 3fr;
+  }
+}
