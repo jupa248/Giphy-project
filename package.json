@@ -1,0 +1,28 @@
+{
+  "name": "giphy-project",
+  "version": "1.0.0",
+  "description": "Giphy App",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanP-Gimenez/Giphy-Project-Juan-.git"
+  },
+  "author": "Juan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanP-Gimenez/Giphy-Project-Juan-/issues"
+  },
+  "homepage": "https://github.com/JuanP-Gimenez/Giphy-Project-Juan-#readme",
+  "dependencies": {
+    "core-js": "^3.26.0",
+    "parcel": "^2.7.0",
+    "regenerator-runtime": "^0.13.10",
+    "sass": "^1.56.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  }
+}
